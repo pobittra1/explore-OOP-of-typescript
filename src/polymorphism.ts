@@ -1,5 +1,8 @@
 {
   //explore about polymorphisom
+
+  //-------------summary about polymorphism-----------(from my concepts)
+  //method same but output can be different. if i pass dada in same method we should use property in class and constructor. send property as param when create instance. then do operation with same method and finally generate different output----its POLYMORPHISM
   {
     //example one
 
@@ -48,5 +51,38 @@
     getShapeArea(shapeArea);
     getShapeArea(circleArea);
     getShapeArea(regtangleArea);
+  }
+
+  {
+    //example 2
+
+    class NormalPerson {
+      getSleep(): void {
+        console.log("normal person sleeping time is  hours");
+      }
+    }
+
+    class Student extends NormalPerson {
+      getSleep(): void {
+        console.log("student sleeping tiime is 7 hours");
+      }
+    }
+    class Developer extends NormalPerson {
+      getSleep(): void {
+        console.log("developer sleeping time is 6 hours");
+      }
+    }
+
+    const showData = (param: NormalPerson) => {
+      param.getSleep();
+    };
+
+    const normalPerson = new NormalPerson();
+    const student = new Student();
+    const developer = new Developer();
+
+    showData(normalPerson);
+    showData(student);
+    showData(developer);
   }
 }
