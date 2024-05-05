@@ -70,4 +70,5 @@
 
   //get data by function
   getPerson(teacher);
+  getPerson(student);
 }
