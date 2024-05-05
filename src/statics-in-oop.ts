@@ -11,7 +11,7 @@
   }
 
   //create instance
-console.log(Counter.increament());
-console.log(Counter.increament());
-console.log(Counter.increament());
+  console.log(Counter.increament());
+  console.log(Counter.increament());
+  console.log(Counter.increament());
 }
